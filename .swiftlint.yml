@@ -1,0 +1,78 @@
+# SwiftLint configuration file for SwiftUIFoundationApp
+# Disable rules that are too strict or not applicable
+disabled_rules:
+  - trailing_whitespace # Sometimes whitespace is used for readability
+  - todo # TODO comments are useful during development
+  - unused_closure_parameter # Sometimes needed for API conformance
+
+# Enable additional rules
+opt_in_rules:
+  - empty_count # Prefer isEmpty over count == 0
+  - explicit_init # Prefer .init explicitly
+  - force_unwrapping # Avoid force unwrapping when possible
+  - private_outlet # IBOutlets should be private
+  - prohibited_super_call # Detect prohibited super calls
+  - first_where # Prefer .first(where:) over .filter().first
+  - overridden_super_call # Some overridden methods must call super
+  - closure_spacing # Closure expressions should have a single space after opening and before closing
+  - operator_usage_whitespace # Operators should be surrounded by a single whitespace
+  - redundant_nil_coalescing # nil coalescing operator with nil as rhs is redundant
+  - sorted_imports # Imports should be sorted
+
+# Custom rule parameters 
+line_length:
+  warning: 120 # Default is 120
+  error: 150 # Default is 200
+  ignores_comments: true # Comments can be longer
+  ignores_urls: true # URLs can be longer
+
+# Excludes build generated files and directories
+excluded:
+  - Pods
+  - Carthage
+  - vendor
+  - DerivedData
+  - .build
+  - SwiftUIFoundationApp.xcodeproj
+  - SwiftUIFoundationAppTests
+  - SwiftUIFoundationAppUITests
+
+# Rules for function parameters count
+function_parameter_count:
+  warning: 5
+  error: 8
+
+# Rules for function body length
+function_body_length:
+  warning: 70
+  error: 100
+
+# Rules for type body length
+type_body_length:
+  warning: 300
+  error: 500
+
+# Rules for file length
+file_length:
+  warning: 500
+  error: 1000
+
+# Rules for type name
+type_name:
+  min_length: 3
+  max_length: 50
+
+# Rules for variable name
+identifier_name:
+  min_length: 2
+  max_length: 50
+  excluded:
+    - id
+    - URL
+    - x
+    - y
+    - z
+
+# Reporter type
+reporter: "xcode" # reporter type (xcode, json, csv, checkstyle, codeclimate, junit, html, emoji, sonarqube, markdown)
+
