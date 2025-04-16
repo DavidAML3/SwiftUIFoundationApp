@@ -9,6 +9,11 @@ import SwiftUI
 
 @main
 struct SwiftUIFoundationAppApp: App {
+    
+    init() {
+        DependencyManager.registerAllServices()
+    }
+    
     var body: some Scene {
         WindowGroup {
             HomeView()
