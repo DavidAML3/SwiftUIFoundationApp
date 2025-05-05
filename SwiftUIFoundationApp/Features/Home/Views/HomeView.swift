@@ -9,14 +9,13 @@ import Resolver
 import SwiftUI
 
 struct HomeView: View {
-//    @InjectedObject var viewModel: HomeViewModel
+    @InjectedObject var viewModel: HomeViewModel
     
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        VStack(spacing: 20) {
+            Text(viewModel.title)
+                .font(.title)
+                .padding()
         }
         .padding()
     }

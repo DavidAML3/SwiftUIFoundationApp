@@ -9,7 +9,7 @@ import Resolver
 
 final class DependencyManager {
     static func registerAllServices() {
-//        Resolver.register { HomeViewModel() }
+        Resolver.register { HomeViewModel() }
 //        Resolver.register { MyMockService() as MyServiceProtocol }
     }
 }
