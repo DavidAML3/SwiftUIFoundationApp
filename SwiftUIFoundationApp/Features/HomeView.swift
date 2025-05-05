@@ -5,8 +5,8 @@
 //  Created by David Andres Mejia Lopez on 16/04/25.
 //
 
-import SwiftUI
 import Resolver
+import SwiftUI
 
 struct HomeView: View {
 //    @InjectedObject var viewModel: HomeViewModel

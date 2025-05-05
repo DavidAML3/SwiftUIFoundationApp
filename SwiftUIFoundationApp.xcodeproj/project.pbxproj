@@ -7,10 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B6BAFB762DC18C9F000407E9 /* Resolver in Frameworks */ = {isa = PBXBuildFile; productRef = B6BAFB752DC18C9F000407E9 /* Resolver */; };
 		B6C922082DB01655001CFD41 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = B6C922072DB01646001CFD41 /* README.md */; };
-		B6FF2F312DB06CD800EA04BB /* Resolver in Frameworks */ = {isa = PBXBuildFile; productRef = B6FF2F302DB06CD800EA04BB /* Resolver */; };
-		B6FF2F332DB06CD800EA04BB /* Resolver-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = B6FF2F322DB06CD800EA04BB /* Resolver-Dynamic */; };
-		B6FF2F352DB06CD800EA04BB /* Resolver-Static in Frameworks */ = {isa = PBXBuildFile; productRef = B6FF2F342DB06CD800EA04BB /* Resolver-Static */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,9 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B6FF2F332DB06CD800EA04BB /* Resolver-Dynamic in Frameworks */,
-				B6FF2F352DB06CD800EA04BB /* Resolver-Static in Frameworks */,
-				B6FF2F312DB06CD800EA04BB /* Resolver in Frameworks */,
+				B6BAFB762DC18C9F000407E9 /* Resolver in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -125,9 +121,7 @@
 			);
 			name = SwiftUIFoundationApp;
 			packageProductDependencies = (
-				B6FF2F302DB06CD800EA04BB /* Resolver */,
-				B6FF2F322DB06CD800EA04BB /* Resolver-Dynamic */,
-				B6FF2F342DB06CD800EA04BB /* Resolver-Static */,
+				B6BAFB752DC18C9F000407E9 /* Resolver */,
 			);
 			productName = SwiftUIFoundationApp;
 			productReference = B6C921AC2DB009D7001CFD41 /* SwiftUIFoundationApp.app */;
@@ -212,7 +206,7 @@
 			mainGroup = B6C921A32DB009D7001CFD41;
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
-				B6FF2F2F2DB06CD800EA04BB /* XCRemoteSwiftPackageReference "Resolver" */,
+				B6BAFB742DC18C9F000407E9 /* XCRemoteSwiftPackageReference "Resolver" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = B6C921AD2DB009D7001CFD41 /* Products */;
@@ -595,7 +589,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		B6FF2F2F2DB06CD800EA04BB /* XCRemoteSwiftPackageReference "Resolver" */ = {
+		B6BAFB742DC18C9F000407E9 /* XCRemoteSwiftPackageReference "Resolver" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/hmlongco/Resolver.git";
 			requirement = {
@@ -606,20 +600,10 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		B6FF2F302DB06CD800EA04BB /* Resolver */ = {
+		B6BAFB752DC18C9F000407E9 /* Resolver */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = B6FF2F2F2DB06CD800EA04BB /* XCRemoteSwiftPackageReference "Resolver" */;
+			package = B6BAFB742DC18C9F000407E9 /* XCRemoteSwiftPackageReference "Resolver" */;
 			productName = Resolver;
-		};
-		B6FF2F322DB06CD800EA04BB /* Resolver-Dynamic */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = B6FF2F2F2DB06CD800EA04BB /* XCRemoteSwiftPackageReference "Resolver" */;
-			productName = "Resolver-Dynamic";
-		};
-		B6FF2F342DB06CD800EA04BB /* Resolver-Static */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = B6FF2F2F2DB06CD800EA04BB /* XCRemoteSwiftPackageReference "Resolver" */;
-			productName = "Resolver-Static";
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
